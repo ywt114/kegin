@@ -1,4 +1,4 @@
-# 文件名: diy-part2_greatwall.sh
+# 文件名: diy-part2.sh
 # 描述: OpenWrt DIY script part 2 (放在安装feeds之后)
 
 # 修改管理地址
