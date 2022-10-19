@@ -1,4 +1,4 @@
-name: Build x86_64_5.10_greatwall
+name: Build x86_64_5.10
 
 on:
   workflow_dispatch:
@@ -10,9 +10,9 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: greatwall.config
+  CONFIG_FILE: kegin.config
   DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part2_greatwall.sh
+  DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
@@ -29,7 +29,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [x86_64_5.10_greatwall]
+        target: [x86_64_5.10]
 
     steps:
     - name: 检查
